@@ -1,7 +1,6 @@
 <template>
   <nav class="navbar">
     <div>
-      <h1>Calculator</h1>
       <button @click="logout">
         Log out <img class="logout-icon" src="../assets/logout.png" />
       </button>
@@ -30,7 +29,7 @@ export default {
 
 .navbar div {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   flex-direction: row;
   margin: 0 20px 0;
   align-items: center;

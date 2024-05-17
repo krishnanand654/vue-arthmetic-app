@@ -1,11 +1,11 @@
 <template>
   <div class="login-ctn">
     <div>
-      <label for="username">username </label><br />
+      <label for="username">Username </label><br />
       <input type="text" name="username" v-model.trim="username" required />
     </div>
     <div>
-      <label for="password">password </label><br />
+      <label for="password">Password </label><br />
       <input type="password" v-model="password" @keyup.enter="performLogin" required />
     </div>
     <div class="login-btn-ctn">
@@ -46,14 +46,22 @@ export default {
 </script>
 
 <style scoped>
-input {
-  background: rgb(30, 30, 30);
-  border: 1px solid gray;
-  height: 30px;
-  border-radius: 5px;
+.login-ctn label {
+  font-size: 16px;
+}
+.login-ctn input {
+  background: #2f2f2f;
+  border: none;
+  height: 35px;
+  width: 250px;
+  border-radius: 6px;
   color: white;
   margin: 5px 0 10px;
   padding: 0 10px 0;
+}
+
+.login-ctn input:focus {
+  outline: 2px solid #29a569;
 }
 
 .login-ctn {
@@ -65,17 +73,18 @@ input {
 }
 
 .login-btn-ctn {
-  width: 180px;
+  margin-bottom: 20px;
 }
 
 .login-btn {
   margin: 20px 0 0;
-  width: 100%;
+  width: 250px;
   background: #29a569;
-  padding: 5px;
+  padding: 8px;
+  font-size: 16px;
   color: white;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
 }

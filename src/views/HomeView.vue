@@ -142,7 +142,7 @@ export default {
   transition: 0.5s ease-in-out;
 }
 
-input:focus {
+.calc-field-ctn input:focus {
   outline: 2px solid #29a569;
   transform: translateY(-2px);
 }
