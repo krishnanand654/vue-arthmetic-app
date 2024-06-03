@@ -84,7 +84,6 @@ export default {
             this.result
           this.op_array.push(history)
           this.error = null
-          console.log(this.op_array)
         })
         .catch((error) => {
           this.error = error.response.data.error
